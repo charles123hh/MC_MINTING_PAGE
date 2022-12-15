@@ -34,11 +34,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "craco --openssl-legacy-provider start",
+    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && craco start",
     "lint": "prettier -c 'src/**/*.{ts,tsx}' && npm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "prettier --write 'src/**/*.{ts,tsx}' && eslint --fix 'src/**/*.{ts,tsx}'",
-    "build": "craco build",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && craco build",
     "test": "craco test",
     "eject": "craco eject"
   },
