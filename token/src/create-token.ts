@@ -16,9 +16,9 @@ async function createToken() {
     }
 
     const dataV2 = {
-        name: "CCD TEST Token",
-        symbol: "EZ",
-        uri: "https://gateway.pinata.cloud/ipfs/QmS9YE7DNt2SGediPaUMdE3PHeupvnnCesHV6KS3Hs7pCb",
+        name: "CCDXTKN",
+        symbol: "CCD",
+        uri: "https://bafkreidxw5ey5ryt7jihvewy7cmpijf2umkjh5kufd4kbktru7d3heuodu.ipfs.nftstorage.link/",
         sellerFeeBasisPoints: 0,
         creators: null,
         collection: null,
