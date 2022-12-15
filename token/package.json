@@ -1,0 +1,14 @@
+{
+  "name": "ccd-token-creator",
+  "author": "charles dalisay",
+  "scripts": {
+    "create-token": "ts-node ./src/create-token.ts",
+    "update-token": "ts-node ./src/update-token.ts",
+    "transfer-token": "ts-node ./src/update-token.ts"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^2.5.2",
+    "@solana/spl-token": "^0.3.6",
+    "@solana/web3.js": "^1.70.1"
+  }
+}
