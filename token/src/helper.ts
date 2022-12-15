@@ -1,13 +1,13 @@
 import { Keypair, PublicKey, Transaction, Connection, sendAndConfirmTransaction } from "@solana/web3.js";
 import { createCreateMetadataAccountV2Instruction, createUpdateMetadataAccountV2Instruction, PROGRAM_ID } from "@metaplex-foundation/mpl-token-metadata";
 
-const MINT_KEY = new PublicKey('cfd5WPGcSw4dgtXHVuQV2e1KF8CPaXvkaKZYkbybdon');
+const MINT_KEY = new PublicKey(process.argv.slice(2)[0]);
 const CONNECTION = new Connection('https://api.devnet.solana.com');
 
 function openWallet(keypairFile: string): Keypair {
     const fs = require("fs");
     const key = Keypair.fromSecretKey(
-      new Uint8Array(JSON.parse(fs.readFileSync(`${__dirname}/${keypairFile.toString()}`)))
+      new Uint8Array(JSON.parse(fs.readFileSync(`./${keypairFile.toString()}`)))
     );
     return key;
 }

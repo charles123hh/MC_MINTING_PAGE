@@ -3,8 +3,7 @@
   "author": "charles dalisay",
   "scripts": {
     "create-token": "ts-node ./src/create-token.ts",
-    "update-token": "ts-node ./src/update-token.ts",
-    "transfer-token": "ts-node ./src/update-token.ts"
+    "update-token": "ts-node ./src/update-token.ts"
   },
   "dependencies": {
     "@metaplex-foundation/mpl-token-metadata": "^2.5.2",
